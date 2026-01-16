@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Установка заборов в Тюмени</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Установка заборов под ключ в Тюмени и области</h1>
+  <p>Любые материалы • Опыт 10 лет • Честные сметы</p>
+</header>
+
+<section>
+  <h2>Услуги</h2>
+  <p>
+    Установка заборов из любых материалов. Работа под ключ:
+    замер, монтаж, демонтаж старого забора. Возможна работа
+    как с моим материалом, так и с материалом заказчика.
+  </p>
+</section>
+
+<section>
+  <h2>Цены</h2>
+  <p>
+    Стоимость работ — от <strong>500 руб/м</strong>.
+    Цена зависит от материала и конструкции.
+  </p>
+</section>
+
+<section>
+  <h2>Наши работы</h2>
+  <img src="images/1.jpg" alt="Установка забора">
+</section>
+
+<section>
+  <h2>Контакты</h2>
+  <p>
+    Телефон: <strong>+7 912 929-84-77</strong><br>
+    Андрей<br>
+    MAX, Telegram, VK
+  </p>
+</section>
+
+</body>
+</html>
