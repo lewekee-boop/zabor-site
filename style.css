@@ -3,22 +3,42 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
 }
 
 header {
-  background: #2f2f2f;
+  background: #4CAF50;
   color: white;
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+header h1 {
+  margin: 0 0 10px;
+}
+
 section {
+  background: white;
+  margin: 20px auto;
   padding: 20px;
   max-width: 900px;
-  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #4CAF50;
 }
 
 img {
   max-width: 100%;
   border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Контакты */
+section:last-of-type {
+  text-align: center;
 }
