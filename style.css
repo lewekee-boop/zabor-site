@@ -33,7 +33,7 @@ section h2 {
 }
 
 img {
-  max-width: 100%;
+  max-width: 30%;
   border-radius: 8px;
   margin-top: 10px;
 }
@@ -42,3 +42,4 @@ img {
 section:last-of-type {
   text-align: center;
 }
+
