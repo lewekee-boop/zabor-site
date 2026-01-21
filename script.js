@@ -89,6 +89,24 @@ document.querySelectorAll('.messenger').forEach(link => {
   });
 });
 
+// Удаляем элемент ворот после завершения анимации (защита от блокировки прокрутки)
+window.addEventListener('load', () => {
+  const gates = document.getElementById('gatesAnimation');
+  if (!gates) return;
+
+  // повесь обработчик на левую створку — когда её анимация закончится, удалим весь блок
+  const leftGate = gates.querySelector('.gate-left');
+  leftGate.addEventListener('animationend', () => {
+    if (gates && gates.parentNode) gates.parentNode.removeChild(gates);
+  }, { once: true });
+
+  // На всякий случай защита: удалим через 3.2s если не сработало
+  setTimeout(() => {
+    if (gates && gates.parentNode) gates.parentNode.removeChild(gates);
+  }, 3200);
+});
+
+
 // Добавляем музыку звука открытия ворот (опционально)
 // function playGateSound() {
 //   const audio = new Audio('assets/gate-open.mp3');
@@ -96,3 +114,4 @@ document.querySelectorAll('.messenger').forEach(link => {
 // }
 
 console.log('Script загружен успешно!');
+
