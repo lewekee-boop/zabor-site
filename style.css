@@ -198,11 +198,11 @@ body {
 }
 
 .gate-left .hinge {
-  right: -15px;
+  right: 0px;
 }
 
 .gate-right .hinge {
-  left: -15px;
+  left: 0px;
 }
 
 /* ===== ЗАКРЕПЛЕННЫЙ КОНТАКТ ВИДЖЕТ ===== */
@@ -861,4 +861,5 @@ body {
     font-size: 32px;
   }
 }
+
 
