@@ -2,47 +2,180 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Установка заборов в Тюмени</title>
+  <title>Установка заборов в Тюмени | MAX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <h1>Установка заборов под ключ в Тюмени и области</h1>
-  <p>Любые материалы • Опыт 10 лет • Честные сметы</p>
+<!-- Анимированные ворота при загрузке -->
+<div class="gates-animation" id="gatesAnimation">
+  <div class="gate gate-left"></div>
+  <div class="gate gate-right"></div>
+</div>
+
+<!-- Закрепленная информация справа -->
+<aside class="contact-widget" id="contactWidget">
+  <div class="contact-header">
+    <h3>MAX</h3>
+    <p class="contact-name">Андрей</p>
+  </div>
+  
+  <div class="contact-info">
+    <div class="phone">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+79129298477">+7 912 929-84-77</a>
+    </div>
+  </div>
+
+  <div class="messengers">
+    <a href="https://t.me/andrey_max_zabor" class="messenger telegram" title="Telegram">
+      <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://vk.com" class="messenger vk" title="VK">
+      <i class="fab fa-vk"></i>
+    </a>
+  </div>
+
+  <button class="call-btn">Заказать звонок</button>
+</aside>
+
+<!-- Шапка с фоновым изображением -->
+<header class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="main-title">Установка заборов под ключ</h1>
+    <p class="main-subtitle">в Тюмени и области</p>
+    <p class="hero-thesis">Любые материалы • Опыт 10 лет • Честные сметы</p>
+    <button class="cta-btn">Получить консультацию</button>
+  </div>
 </header>
 
-<section>
-  <h2>Услуги</h2>
-  <p>
-    Установка заборов из любых материалов. Работа под ключ:
-    замер, монтаж, демонтаж старого забора. Возможна работа
-    как с моим материалом, так и с материалом заказчика.
-  </p>
+<!-- Услуги -->
+<section class="services-section">
+  <div class="container">
+    <h2>Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-ruler"></i>
+        <h3>Замер</h3>
+        <p>Профессиональный замер участка и расчет материалов</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tools"></i>
+        <h3>Монтаж</h3>
+        <p>Качественный монтаж забора с соблюдением всех норм</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-hammer"></i>
+        <h3>Демонтаж</h3>
+        <p>Демонтаж старого забора и вывоз материалов</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-box"></i>
+        <h3>Материалы</h3>
+        <p>Работаем с любыми материалами или вашим материалом</p>
+      </div>
+    </div>
+    <div class="services-description">
+      <h3>Работа под ключ</h3>
+      <p>Установка заборов из любых материалов. Полный цикл работ: замер, монтаж, демонтаж старого забора. Возможна работа как с нашим материалом, так и с материалом заказчика. Гарантия на все работы.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Цены</h2>
-  <p>
-    Стоимость работ — от <strong>500 руб/м</strong>.
-    Цена зависит от материала и конструкции.
-  </p>
+<!-- Цены -->
+<section class="prices-section">
+  <div class="container">
+    <h2>Прайс-лист</h2>
+    <div class="price-table">
+      <div class="price-item">
+        <h3>Стартовая цена</h3>
+        <p class="price">от 500 руб/м</p>
+        <p class="price-text">Только монтаж</p>
+      </div>
+      <div class="price-item featured">
+        <div class="popular-badge">Популярное</div>
+        <h3>Под ключ</h3>
+        <p class="price">от 1500 руб/м</p>
+        <p class="price-text">Замер + материалы + монтаж</p>
+      </div>
+      <div class="price-item">
+        <h3>Премиум</h3>
+        <p class="price">по смете</p>
+        <p class="price-text">Эксклюзивные материалы</p>
+      </div>
+    </div>
+    <p class="price-note">*Точная стоимость зависит от материала, конструкции и сложности работ</p>
+  </div>
 </section>
 
-<section>
-  <h2>Наши работы</h2>
-  <img src="images/1.jpg" alt="Установка забора">
+<!-- Наши работы -->
+<section class="portfolio-section">
+  <div class="container">
+    <h2>Примеры наших работ</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="images/1.jpg" alt="Забор из профнастила">
+        <div class="portfolio-overlay">
+          <p>Забор из профнастила</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/1.jpg" alt="Деревянный забор">
+        <div class="portfolio-overlay">
+          <p>Деревянный забор</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/1.jpg" alt="Кованый забор">
+        <div class="portfolio-overlay">
+          <p>Кованый забор</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/1.jpg" alt="Забор из кирпича">
+        <div class="portfolio-overlay">
+          <p>Забор из кирпича</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Контакты</h2>
-  <p>
-    Телефон: <strong>+7 912 929-84-77</strong><br>
-    Андрей<br>
-    MAX, Telegram, VK
-  </p>
+<!-- Контакты -->
+<section class="contact-section">
+  <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Телефон</h3>
+        <p><a href="tel:+79129298477">+7 912 929-84-77</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Город</h3>
+        <p>Тюмень и область</p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-user"></i>
+        <h3>Контактное лицо</h3>
+        <p>Андрей</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 MAX - Установка заборов. Все права защищены.</p>
+    <p>Тюмень и область</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
