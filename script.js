@@ -13,9 +13,13 @@ document.querySelector('.call-btn').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Сайт загружен!');
   
-  // Добавляем класс для автостарта анимации
+document.addEventListener('DOMContentLoaded', function() {
   const gatesAnimation = document.getElementById('gatesAnimation');
-  // Анимация уже запускается через CSS, но можно добавить дополнительные эффекты
+  if (gatesAnimation) {
+    gatesAnimation.classList.add('open'); // запускаем анимацию
+  }
+});
+
 });
 
 // Добавляем эффект параллакса на hero секцию
@@ -114,4 +118,5 @@ window.addEventListener('load', () => {
 // }
 
 console.log('Script загружен успешно!');
+
 
