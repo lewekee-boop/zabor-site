@@ -13,13 +13,9 @@ document.querySelector('.call-btn').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Сайт загружен!');
   
-document.addEventListener('DOMContentLoaded', function() {
+  // Добавляем класс для автостарта анимации
   const gatesAnimation = document.getElementById('gatesAnimation');
-  if (gatesAnimation) {
-    gatesAnimation.classList.add('open'); // запускаем анимацию
-  }
-});
-
+  // Анимация уже запускается через CSS, но можно добавить дополнительные эффекты
 });
 
 // Добавляем эффект параллакса на hero секцию
@@ -93,24 +89,6 @@ document.querySelectorAll('.messenger').forEach(link => {
   });
 });
 
-// Удаляем элемент ворот после завершения анимации (защита от блокировки прокрутки)
-window.addEventListener('load', () => {
-  const gates = document.getElementById('gatesAnimation');
-  if (!gates) return;
-
-  // повесь обработчик на левую створку — когда её анимация закончится, удалим весь блок
-  const leftGate = gates.querySelector('.gate-left');
-  leftGate.addEventListener('animationend', () => {
-    if (gates && gates.parentNode) gates.parentNode.removeChild(gates);
-  }, { once: true });
-
-  // На всякий случай защита: удалим через 3.2s если не сработало
-  setTimeout(() => {
-    if (gates && gates.parentNode) gates.parentNode.removeChild(gates);
-  }, 3200);
-});
-
-
 // Добавляем музыку звука открытия ворот (опционально)
 // function playGateSound() {
 //   const audio = new Audio('assets/gate-open.mp3');
@@ -118,5 +96,3 @@ window.addEventListener('load', () => {
 // }
 
 console.log('Script загружен успешно!');
-
-
