@@ -161,7 +161,7 @@ body {
   height: 100px;
   background: radial-gradient(circle, #c9a56a 0%, #b48c4f 50%, #8f6f3e 100%);
   top: 50%;
-  right: 24px;
+  right: 1176px;
   transform: translateY(-50%);
   border-radius: 50%;
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.4), inset 1px 1px 3px rgba(255, 255, 255, 0.2);
@@ -181,7 +181,7 @@ body {
   height: 100px;
   background: radial-gradient(circle, #c9a56a 0%, #b48c4f 50%, #8f6f3e 100%);
   top: 50%;
-  left: 1000px;
+  left: 24px;
   transform: translateY(-50%);
   border-radius: 50%;
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.4), inset 1px 1px 3px rgba(255, 255, 255, 0.2);
@@ -863,5 +863,6 @@ body {
     font-size: 32px;
   }
 }
+
 
 
