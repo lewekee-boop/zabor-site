@@ -1,14 +1,3 @@
-// Обработчик кнопки "Получить консультацию"
-document.querySelector('.cta-btn').addEventListener('click', function() {
-  alert('Спасибо за интерес! Вскоре мы свяжемся с вами по номеру +7 912 929-84-77');
-  // Здесь можно добавить валидацию формы и отправку данных
-});
-
-// Обработчик кнопки "Заказать звонок"
-document.querySelector('.call-btn').addEventListener('click', function() {
-  alert('Спасибо! Мы позвоним вам в ближайшее время на номер +7 912 929-84-77');
-});
-
 // Плавное закрытие ворот при загрузке
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Сайт загружен!');
