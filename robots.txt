@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: zabor72-tmn.ru
+Sitemap: https://zabor72-tmn.ru/sitemap.xml
